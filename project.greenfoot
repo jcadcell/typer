@@ -1,0 +1,30 @@
+#Greenfoot properties
+#Thu Mar 03 07:44:13 EST 2016
+target1.editor.x=0
+target1.type=ClassTarget
+project.charset=UTF-8
+mainWindow.height=702
+target1.naviview.expanded=false
+class.TextField.image=recycpap.jpg
+version=2.2.1
+readme.editor.y=0
+readme.editor.x=0
+class.TextField.superclass=greenfoot.World
+simulation.speed=67
+world.lastInstantiated=TextField
+target1.height=50
+target1.width=80
+mainWindow.y=14
+mainWindow.x=552
+readme.editor.height=700
+target1.editor.height=716
+target1.editor.width=1366
+package.numDependencies=0
+target1.y=10
+target1.x=70
+package.numTargets=1
+mainWindow.width=814
+target1.name=TextField
+readme.editor.width=900
+target1.showInterface=false
+target1.editor.y=0
