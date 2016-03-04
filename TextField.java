@@ -4,7 +4,7 @@ import java.awt.Color;
 /**
  * A program that, when you type a key or word, says it out loud.
  * 
- * @author Samuel Oxenford 
+ * @author seo 
  * @version 0.2
  */
 public class TextField extends World
@@ -18,10 +18,10 @@ public class TextField extends World
     public TextField()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 30, 1); 
+        super(1095, 30, 1); 
         screen = getBackground();
         screen.setFont(screen.getFont().deriveFont(18.0f));
-        Greenfoot.playSound("intro.wav");  
+        Greenfoot.playSound("intro2.wav");  
     }
     
     public void act()
