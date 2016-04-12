@@ -18,10 +18,10 @@ public class TextField extends World
     public TextField()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1095, 30, 1); 
+        super(1095, 100, 1); 
         screen = getBackground();
         screen.setFont(screen.getFont().deriveFont(18.0f));
-        Greenfoot.playSound("intro2.wav");  
+        Greenfoot.playSound("other/intro2.wav");  
     }
     
     public void act()
@@ -54,7 +54,7 @@ public class TextField extends World
              // Add letter to word.  Only gets here if sound file was found
              word.append(key); 
         } catch (Exception e){
-             Greenfoot.playSound("unknown.wav");            
+             Greenfoot.playSound("other/unknown.wav");            
         }
         // Greenfoot.delay(100);
     }
@@ -64,7 +64,7 @@ public class TextField extends World
         try{
             Greenfoot.playSound("words/" + w + ".wav");
         } catch (Exception e){
-            Greenfoot.playSound("unknown.wav");            
+            Greenfoot.playSound("other/unknown.wav");            
         }
         
         word.delete(0,word.length());
