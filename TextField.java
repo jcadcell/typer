@@ -21,7 +21,7 @@ public class TextField extends World
         super(1095, 100, 1); 
         screen = getBackground();
         screen.setFont(screen.getFont().deriveFont(18.0f));
-        Greenfoot.playSound("other/intro2.wav");  
+        Greenfoot.playSound("other/intro.wav");  
     }
     
     public void act()
@@ -42,6 +42,9 @@ public class TextField extends World
            // Draw text
            screen.setColor(Color.BLACK);
            screen.drawString(word.toString(),5,20);
+        }
+       if(Greenfoot.isKeyDown("escape")) {
+           Greenfoot.stop();
         }
     } 
     
