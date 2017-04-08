@@ -8,4 +8,6 @@ comment2.params=key
 comment2.target=void\ playKey(java.lang.String)
 comment3.params=
 comment3.target=void\ playWord()
-numComments=4
+comment4.params=
+comment4.target=void\ display()
+numComments=5

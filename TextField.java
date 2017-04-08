@@ -21,31 +21,29 @@ public class TextField extends World
         super(1095, 100, 1); 
         screen = getBackground();
         screen.setFont(screen.getFont().deriveFont(18.0f));
-        Greenfoot.playSound("other/intro.wav");  
+        Greenfoot.playSound("other/intro.wav");
     }
     
     public void act()
     {
        String key = Greenfoot.getKey();
        if(null!=key) {
-           if (key.equals("space") || key.equals("enter")) // Or "enter"
-           {
+           if (key.equals("space") || key.equals("enter")) {
                playWord();
-           } else {
+           } else if(Greenfoot.isKeyDown("backspace")) {
+               int end=word.length();
+               if (word.length()>0){
+                   word.deleteCharAt(end-1);
+                }
+           }
+           
+            else {
                playKey(key);
            }
+           display();
+        }
        
-           // Draw text box
-           screen.setColor(Color.WHITE);
-           screen.fillRect(5,5,290,25);
-           
-           // Draw text
-           screen.setColor(Color.BLACK);
-           screen.drawString(word.toString(),5,20);
-        }
-       if(Greenfoot.isKeyDown("escape")) {
-           Greenfoot.stop();
-        }
+       
     } 
     
     
@@ -72,5 +70,14 @@ public class TextField extends World
         
         word.delete(0,word.length());
         Greenfoot.delay(100);
+    }
+    
+    void display(){
+        // Draw text box
+        screen.setColor(Color.WHITE);
+        screen.fillRect(5,5,290,25);
+        // Draw text
+        screen.setColor(Color.BLACK);
+        screen.drawString(word.toString(),5,20);
     }
 }
